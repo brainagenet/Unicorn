@@ -1,0 +1,51 @@
+/*링크*/
+a:link      { color:#555; text-decoration:underline; font-size:11px;}
+a:active    { color:#555; text-decoration:underline; font-size:11px;}
+a:visited   { color:#555; text-decoration:underline; font-size:11px;}
+a:hover     { color:#555; text-decoration:underline; font-size:11px;}
+
+a.blueLink:link      { color:#356096; text-decoration:underline; font-size:11px; font-weight:normal;}
+a.blueLink:active    { color:#356096; text-decoration:underline; font-size:11px; font-weight:normal;}
+a.blueLink:visited   { color:#356096; text-decoration:underline; font-size:11px; font-weight:normal;}
+a.blueLink:hover     { color:#356096; text-decoration:underline; font-size:11px; font-weight:normal;}
+
+
+
+/*HTML태그별텍스트크기,칼라정의*/
+select { font-size:11px; vertical-align:middle; font-family:Arial;}
+select.selectBase  { font-size:12px; vertical-align:middle; font-family:Arial;}
+
+img.imgMiddle { vertical-align:middle;}
+
+input.inputText { border:#adadad 1px solid; padding:0 0 0 3px; vertical-align:middle; height:16px; *height:18px; font-size:11px; }
+input.inputText2 { border:#adadad 1px solid; padding:0 0 0 3px; vertical-align:middle; height:16px; *height:18px; }
+
+input.inputTextBase { border:#adadad 1px solid; padding:1px 0 0 3px; vertical-align:middle; font-size:12px; height:16px;}
+	*html input.inputTextBase { border:#adadad 1px solid; padding:1px 0 0 3px; vertical-align:middle; font-size:12px; height:21px;}
+
+input.radio { width:18px !important; height:15px; vertical-align:middle;}
+
+textarea.inputText {border:#adadad 1px solid; padding:1px 0 1px 3px;}
+
+/*텍스트 칼라 정의*/
+.c-c60000 { color:#c60000;}
+.c-5285ba { color:#5285ba;}
+.c-356096 { color:#356096;}
+.c-f15202 { color:#f15202;}
+/*텍스트 사이즈 정의*/
+.txtSmall { font-size:11px;}
+.txtNormal { font-size:12px;}
+
+/*텍스트 기타정의*/
+.underline { text-decoration:underline;}
+.normal { font-weight:normal;}
+.b { font-weight:bold;}
+
+/* 주황강조 */
+.txtTp1 { color:#DA6428; }
+
+/* 파랑강조 */
+.txtTp2 { color:#356096; }
+
+/* 강조문구 사이간격 */
+.PointTpRS { text-align:left; font-size:11px; margin:0 0 6px 0; padding:0 0 0 6px; }

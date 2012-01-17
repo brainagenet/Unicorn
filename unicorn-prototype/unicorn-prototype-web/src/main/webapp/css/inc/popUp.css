@@ -1,0 +1,63 @@
+/*팝업 페이지 기본정의*/
+body, td, div, textarea, input { font-family:Arial,Verdana,Tahoma; font-size:12px; color:#555;}
+
+/*팝업크기별 헤더정의*/
+div.popTitleTypeA { width:400px; background:url(../../images/pop/bg_title_a.gif) no-repeat;  padding:15px 0 36px 20px;}
+div.popTitleTypeB { width:660px; background:url(../../images/pop/bg_title_b.gif) no-repeat;  padding:15px 0 36px 20px;}
+div.popTitleTypeC { width:900px; background:url(../../images/pop/bg_title_c.gif) no-repeat;  padding:15px 0 36px 20px;}
+
+/*팝업 텍스트 제목별 정의*/
+h1.popTitleH1 { color:#fff; font-weight:bold; font-size:20px;}
+h2.popTitleH2 { font-size:18px; color:#333; padding:11px 0 0 0; line-height:12px;}
+h3.popTitleH3 { font-size:14px; color:#356096; padding:0 0 7px 22px; margin-top:33px; background:url(../../images/common/layout/bl_title_small.gif) 0 2px no-repeat;}
+
+/*팝업 크기별 내용영역 정의*/
+div.popContTypeA { width:360px; margin:0 0 0 20px;}
+div.popContTypeB { width:628px; margin:0 0 0 20px;}
+div.popContTypeC { width:860px; margin:0 0 0 20px;}
+
+/*팝업 게시판 리스트정의*/
+table.popTableList { border-top:#90b5da 2px solid; border-bottom:#ccddee 1px solid;}
+table.popTableList th { background:#f3f7fb; color:#719cc7; text-align:center; border-bottom:#ccddee 1px solid; border-right:#ccddee 1px solid; padding:4px 0 5px 0;}
+table.popTableList td {text-align:center; border-bottom:#e6e6e6 1px solid; border-right:#ccddee 1px solid; padding:4px 0 5px 0;}
+table.popTableList  tr.tableTr_r { background:#f3f3f3;}
+table.popTableList th.endLine { border-right:none;}
+table.popTableList td.endLine { border-right:none;}
+
+/*팝업크기별 풋터 정의*/
+div.popFooterA { width:400px; border-top:#d1d1d1 1px solid; background:#f3f3f3; margin-top:39px;}
+div.popFooterA table.popFooterA { width:400px;}
+div.popFooterA table.popFooterA td { padding:10px 20px 10px 20px; }
+div.popFooterA table.popFooterA td table td { padding:0; margin:0;}
+div.popFooterB { width:660px; border-top:#d1d1d1 1px solid; background:#f3f3f3; margin-top:39px;}
+div.popFooterB table.popFooterB { width:660px;}
+div.popFooterB table.popFooterB td { padding:10px 20px 10px 20px; }
+div.popFooterB table.popFooterB td table td { padding:0; margin:0;}
+div.popFooterC { width:900px; border-top:#d1d1d1 1px solid; background:#f3f3f3; margin-top:39px;}
+div.popFooterC table.popFooterC { width:900px;}
+div.popFooterC table.popFooterC td { padding:10px 20px 10px 20px; }
+div.popFooterC table.popFooterC td table td { padding:0; margin:0;}
+
+/*팝업의 풋터 카피라이트 정의*/
+td.popCopy { font-size:11px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

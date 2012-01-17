@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+    xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>unicorn-prototype</artifactId>
+        <groupId>net.brainage.unicorn</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>unicorn-prototype-domain</artifactId>
+    <name>unicorn-prototype-domain</name>
+
+    <properties>
+        <mybatis.version>3.0.6</mybatis.version>
+        <mybatis.spring.version>1.0.2</mybatis.spring.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis.spring.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
