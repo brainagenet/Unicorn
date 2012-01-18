@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="net.brainage.unicorn.domain.dao.CodeDao">
+
+    <resultMap type="Code" id="codeResultMap">
+        <result column="CD_ID" property="id" />
+        <result column="CD_NAME" property="name" />
+        <result column="CD_DESC" property="description" />
+        <result column="USE_YN" property="useYn" />
+        <result column="CREATED_ON" property="createdOn" />
+    </resultMap>
+
+    <sql id="basicSelectCode">
+        SELECT CD_ID, CD_NAME, CD_DESC, USE_YN, CREATED_ON
+          FROM tb_code
+    </sql>
+    
+    <sql id="criteriaSelectCode">
+        <if test="searchKeyword != null">
+            <where>
+                <if test="searchKey == 1">
+                    CD_ID LIKE CONCAT('%', #{searchKeyword}, '%')
+                </if>
+                <if test="searchKey == 2">
+                    CD_NAME LIKE CONCAT('%', #{searchKeyword}, '%')
+                </if>
+                <if test="searchKey == 3">
+                    CD_DESC LIKE CONCAT('%', #{searchKeyword}, '%')
+                </if>
+                <if test="searchKey == 4">
+                    CD_NAME LIKE CONCAT('%', #{searchKeyword}, '%')
+                    OR CD_DESC LIKE CONCAT('%', #{searchKeyword}, '%')
+                </if>
+            </where>
+        </if>
+    </sql>
+
+    <select id="selectCodeCount" parameterMap="Criteria">
+        SELECT COUNT(*)
+          FORM tb_code
+        <include refid="criteriaSelectCode" />
+    </select>
+    
+    <select id="selectCodeList" parameterMap="Criteria">
+        <include refid="basicSelectCode" />
+        <include refid="criteriaSelectCode" />
+    </select>
+    
+    <select id="selectCodeListOnPage" parameterMap="Criteria">
+        <include refid="basicSelectCode" />
+        <include refid="criteriaSelectCode" />
+        limit #{startIndex}, #{listSize}
+    </select>
+    
+    <select id="selectCode" parameterType="string">
+        <include refid="basicSelectCode" />
+        WHERE CD_ID = #{id}
+    </select>
+    
+    <insert id="insertCode" parameterType="Code">
+        INSERT INTO TB_CODE (CD_ID, CD_NAME, CD_DESC, USE_YN, CREATED_ON)
+        VALUES (#{id}, #{name}, #{description}, #{useYn}, now())
+    </insert>
+    
+    <update id="updateCode" parameterType="Code">
+        UPDATE tb_code
+           SET CD_NAME = #{name},
+               CD_DESC = #{description},
+               USE_YN = #{useYn}
+         WHERE CD_ID = #{id}
+    </update>
+    
+    <delete id="deleteCode" parameterType="string">
+        DELETE FROM tb_code
+         WHERE CD_ID = #{id}
+    </delete>
+
+</mapper>
+
+

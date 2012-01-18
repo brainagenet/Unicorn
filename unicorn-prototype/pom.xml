@@ -202,6 +202,7 @@
         <module>unicorn-prototype-web</module>
         <module>unicorn-prototype-domain</module>
     <module>unicorn-prototype-service</module>
+    <module>unicorn-prototype-framework</module>
   </modules>
     
 </project>
