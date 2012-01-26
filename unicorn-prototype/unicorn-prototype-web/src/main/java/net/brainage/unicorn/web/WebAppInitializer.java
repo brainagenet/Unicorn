@@ -8,15 +8,14 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
-import net.brainage.unicorn.web.config.AppConfig;
-import net.brainage.unicorn.web.config.WebConfig;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
+
+import net.brainage.unicorn.web.config.AppConfig;
+import net.brainage.unicorn.web.config.WebConfig;
 
 /**
  * 
@@ -24,7 +23,8 @@ import org.springframework.web.servlet.DispatcherServlet;
  * @author ms29.seo@gmail.com
  * @version 0.1
  */
-public class WebAppInitializer implements WebApplicationInitializer
+// public class WebAppInitializer implements WebApplicationInitializer
+public class WebAppInitializer
 {
     
     /**
@@ -45,7 +45,6 @@ public class WebAppInitializer implements WebApplicationInitializer
     /* (non-Javadoc)
      * @see org.springframework.web.WebApplicationInitializer#onStartup(javax.servlet.ServletContext)
      */
-    @Override
     public void onStartup(ServletContext servletContext) throws ServletException
     {
         if (log.isInfoEnabled())

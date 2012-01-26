@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: exia
-Build-Jdk: 1.7.0_02
+Built-By: ms29seo
+Build-Jdk: 1.6.0_27
 Created-By: Maven Integration for Eclipse
 
